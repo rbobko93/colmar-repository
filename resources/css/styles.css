@@ -134,7 +134,7 @@ header {
 
 .header__button {
     border: none;
-    background-color: hsl(0,0%,20%);
+    background-color: hsl(0, 0%, 20%);
     color: white;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -162,5 +162,123 @@ header {
     .header__heading {
         padding-right: 0;
         padding-top: 2rem;
+    }
+}
+
+/* INFO */
+
+.info {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.info__left {
+    padding: 2rem 1.5rem;
+    width: 60%;
+    border-right: 1px solid hsl(0, 0%, 70%);
+}
+
+.info__left__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.info__left__heading {
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.info__left__paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.info__left__author {
+    margin-top: 2rem;
+}
+
+.info__right {
+    width: 40%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__right__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.info__right__item__image {
+    width: 35%;
+    height: auto;
+}
+
+.info__right__item__text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.info__right__item__text__heading {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: hsl(0,0%,20%);
+}
+
+.info__right__item__text__paragraph {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.info__right__item__text__link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+    .info__left {
+        display: none;
+    }
+
+    .info__right {
+        padding: 0;
+        width: 100%;
+    }
+
+    .info__right__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info__right__item__image {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #orientation {
+        content:url("../images/information-orientation-mobile.jpg");
+    }
+
+    #campus {
+        content:url("../images/information-campus-mobile.jpg");
+    }
+
+    #lecture {
+        content: url("../images/information-guest-lecture-mobile.jpg");
     }
 }
