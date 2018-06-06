@@ -171,6 +171,7 @@ header {
     background-color: white;
     display: flex;
     flex-direction: row;
+    border-bottom: 1px solid hsl(0, 0%, 70%);
 }
 
 .info__left {
@@ -233,11 +234,11 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: hsl(0,0%,20%);
+    color: hsl(0, 0%, 20%);
 }
 
 .info__right__item__text__paragraph {
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: lighter;
     margin-bottom: 1rem;
@@ -271,14 +272,113 @@ header {
     }
 
     #orientation {
-        content:url("../images/information-orientation-mobile.jpg");
+        content: url("../images/information-orientation-mobile.jpg");
     }
 
     #campus {
-        content:url("../images/information-campus-mobile.jpg");
+        content: url("../images/information-campus-mobile.jpg");
     }
 
     #lecture {
         content: url("../images/information-guest-lecture-mobile.jpg");
+    }
+}
+
+/* LEARNING */
+
+.learning {
+    background-color: hsl(0, 0%, 70%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.learning h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: hsl(0, 0%, 20%);
+    text-align: center;
+}
+
+.learning__panel-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3.5rem;
+}
+
+.learning__panel-mobile {
+    display: none;
+}
+
+.learning__panel__row__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 2rem 2rem;
+    background-color: white;
+    width: 25%;
+}
+
+.learning__panel__row__item img {
+    width: 100%;
+    height: auto;
+}
+
+.learning__panel__row__item__text {
+    padding: 1.5rem;
+}
+
+.learning__panel__row__item__heading {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.learning__panel__row__item__subheading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: .5rem 0;
+}
+
+@media all and (max-width: 1000px) {
+    .learning {
+        background-color: white;
+    }
+
+    .learning h1 {
+        margin-bottom: 1rem;
+    }
+
+    .learning__panel-desktop {
+        display: none;
+    }
+
+    .learning__panel-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .learning__panel-mobile__card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        background-color: hsl(0,0%,70%);
+        margin-bottom: .5rem;
+    }
+
+    .learning__panel-mobile__card p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        margin: 1rem 1.5rem 1rem 1rem;
     }
 }
